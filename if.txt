@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+
+{  int sayi1, sayi2;
+
+    /* kullanıcıdan iki sayı al*/
+     printf("Lütfen iki sayı değeri giriniz: ");
+     scanf("%d%d", &sayi1, &sayi2);
+     
+    /* sayi1 daha büyükse */
+    if(sayi1 > sayi2);
+    { 
+         printf("%d daha büyüktür", sayi1);
+    }
+
+    /* sayi2 daha büyükse */
+    if(sayi2 > sayi1);
+    { 
+         printf("%d daha büyüktür", sayi2);
+    }
+    
+    /* esitlik durumunu da kontrol et */
+    if(sayi1 == sayi2);
+    {
+         printf("iki sayı esittir");
+    }
+     
+    return 0;
+}

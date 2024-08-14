@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{   int maliyet, satis_bedeli, kar_zarar;
+   /*Ürünün maliyet ve satış fiyatlarını kullanıcıdan al*/
+   printf("Maliyet bedelini giriniz");
+   scanf("%d", &maliyet);
+   printf("satis_bedelini giriniz");
+   scanf("%d", &satis_bedeli);
+   
+   if(satis_bedeli > maliyet)
+   { /*Bu durumda kâr elde edilmiştir */
+     kar_zarar = satis_bedeli - maliyet;
+       printf("Kâr = %d", kar_zarar);
+   }
+   else if(maliyet > satis_bedeli)
+   {    kar_zarar = maliyet - satis_bedeli;
+        printf("Zarar = %d", kar_zarar);
+   }
+   else 
+   {
+       printf("kâr veya zarar edilmemiştir.");
+   }
+    return 0;
+   }
